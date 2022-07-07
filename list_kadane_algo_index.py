@@ -1,3 +1,8 @@
+'''
+Problem: https://www.educative.io/module/lesson/data-structures-in-python/q2R6ExkEqW7
+Solution: https://stackoverflow.com/a/61732437
+'''
+
 def find_max_sum_sublist(lst): 
     '''
     Without indexes
@@ -46,3 +51,8 @@ def find_max_sum_sublist(lst):
     return global_max
 
 find_max_sum_sublist([-4, 2, -5, 1, 2, 3, 6, -5, 1])
+
+'''
+TC: O(N)
+SC: O(N+N)
+'''
