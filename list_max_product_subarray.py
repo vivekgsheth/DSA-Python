@@ -1,3 +1,8 @@
+'''
+Problem: https://leetcode.com/problems/maximum-product-subarray/
+Reference: NeetCode
+'''
+
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         globalMax = max(nums)
@@ -15,3 +20,8 @@ class Solution:
             globalMax = max(globalMax, currMax, currMin)
         
         return globalMax
+
+    '''
+    TC: O(N)
+    SC: O(1)
+    '''
