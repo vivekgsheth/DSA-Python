@@ -1,0 +1,16 @@
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        ans, prefix, suffix = [1]*len(nums), 1, 1
+        
+        # As we are doing it from left & right simulataneously,
+        # each index will be multiplied with both prefix & suffix
+        for i in range(len(nums)):
+            # Multiple with current prefix
+            ans[i] = ans[i] * prefix
+            prefix = prefix * nums[i]
+            
+            # Multiple with current suffix
+            ans[-1-i] = ans[-1-i] * suffix
+            suffix = suffix * nums[-1-i]
+        
+        return ans
