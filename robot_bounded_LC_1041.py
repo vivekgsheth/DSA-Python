@@ -3,6 +3,16 @@ Problem: https://leetcode.com/problems/robot-bounded-in-circle/
 Solution: https://www.youtube.com/watch?v=nKv2LnC_g6E
 '''
 
+'''
+Approach:
+- Create a co-ordinate plane with values +x,-x,+y,-y
+- For counter clockwise rotation, replace existing coordinate with their LEFT ones
+    +x -> -y, -x -> +y, +y -> +x, -y -> -x
+- For clockwise rotation, replace existing coordinate with their RIGHT ones
+    +x -> +y, -x -> -y, +y -> -x, -y -> +x
+    
+'''
+
 class Solution:
     def isRobotBounded(self, instructions: str) -> bool:
         x, y = 0, 0
