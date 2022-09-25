@@ -64,7 +64,13 @@ class Solution:
         if arr[idx] <= target:
             
             ds.append(arr[idx])
+            
+            '''
+            Here we are passing `idx` in the recursive call because the question stated we can pick a number `more than once`.
+            If the question states that you can pick the number `only once` then you will need to pass `idx+1`
+            '''
             self.combination(idx, target-arr[idx], ds, n, arr, result)
+            
             ds.remove(arr[idx])
         
         # Exclude
