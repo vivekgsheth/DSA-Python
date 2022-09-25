@@ -45,6 +45,8 @@ r = f()
 
 return (l + r)
 
+# Here you can loop as well from i=0 to n-1
+
 '''
 
 class Solution:
