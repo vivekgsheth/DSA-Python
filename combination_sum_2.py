@@ -27,6 +27,8 @@ class Solution:
         for i in range(idx, n):
             
             # avoid duplicates
+            # `i > idx` -> It is kept to differentiate the first pick & its subsequent picks.
+            # We need to pick the element first time. But we can avoid it subsequently if it is the same
             if i > idx and arr[i] == arr[i-1]:
                 continue
             
