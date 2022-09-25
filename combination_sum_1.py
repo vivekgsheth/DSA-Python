@@ -37,8 +37,8 @@ return False
 
 ------------------------------------ Count subsequences ------------------------------------
 Base case:
-    return 0 ->  condition satisfied
-    return 1 -> condition NOT satisfied
+    return 1 ->  condition satisfied
+    return 0 -> condition NOT satisfied
 
 l = f()
 r = f()
